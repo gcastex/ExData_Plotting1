@@ -18,7 +18,7 @@ plot2 <- function(datafilepath="household_power_consumption.txt"){
     time<-strptime(paste(data$Date,data$Time), format = "%Y-%m-%d %H:%M:%S")
     
     ## plot into png file
-    png(filename="plot2.png", width = 480, height = 480, units = "px")
+    png(filename="plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
     plot(time, data$Global_active_power, ylab="Global Active Power (kilowatts)", xlab="", type='n')
     lines(time, data$Global_active_power)
     dev.off()

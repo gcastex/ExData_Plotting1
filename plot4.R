@@ -25,7 +25,7 @@ plot4 <- function(datafilepath="household_power_consumption.txt"){
     
     ##----- plot -----
     ## open png file
-    png(filename="plot4.png", width = 480, height = 480, units = "px")
+    png(filename="plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 
     ## grid of 4 plots
     par(mfrow=c(2,2), cex=0.8)

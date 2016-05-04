@@ -15,7 +15,7 @@ plot1 <- function(datafilepath="household_power_consumption.txt"){
     data$Global_active_power<-as.numeric(data$Global_active_power)
     
     ## plot into png file
-    png(filename="plot1.png", width = 480, height = 480, units = "px")
+    png(filename="plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
     with(data, hist(Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power"))
     dev.off()
 }

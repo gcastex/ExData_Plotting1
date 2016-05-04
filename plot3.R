@@ -22,7 +22,7 @@ plot3 <- function(datafilepath="household_power_consumption.txt"){
     
 
     ## plot into png file
-    png(filename="plot3.png", width = 480, height = 480, units = "px")
+    png(filename="plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
     plot(time, data$Sub_metering_1, ylab="Energy sub metering", xlab="", type='n')
     lines(time, data$Sub_metering_1)
     lines(time, data$Sub_metering_2, col="red")
